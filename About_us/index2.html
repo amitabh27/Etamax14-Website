@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    
+
+		
+        <link rel="stylesheet" type="text/css" href="swatch/gallerycss/style3.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="swatch/galleryjs/modernizr.custom.79639.js"></script> 
+		
+		<link rel="stylesheet" type="text/css" href="swatch/gallerycss/component.css" />
+    
+
+    
+    
+    
+    
+		<meta charset="UTF-8" />
+		<title>ETAMAX14 | ABOUT US</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="PFold: Paper-Like Unfolding Effect" />
+        <meta name="keywords" content="css3, experiment, 3d, unfolding, fold, paper, component, element, web design, jquery, plugin, perspective" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/pfold.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom2.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+		<style>
+			body { background: url(images/img6.jpg);
+            background-size:200% 200%;
+            background-repeat:no-repeat;			}
+		</style>
+    </head>
+    <body bgcolor=black>
+        <div class="container">		
+			
+			<br><br><br><br><br>
+			<section class="main demo-2">
+				
+				<div id="grid" class="grid clearfix">
+				
+					<div class="uc-container">
+						<div class="uc-initial-content">
+							<img src="images/thumbs/1.jpg" alt="image01" />
+							<span class="icon-eye"></span>
+						</div>
+						<div class="uc-final-content">
+							<img src="images/large/1.jpg" alt="image01-large" />
+							<span class="icon-cancel"></span>
+						</div>
+					</div><!-- / uc-container -->
+
+					<div class="uc-container">
+						<div class="uc-initial-content">
+							<img src="images/thumbs/2.jpg" alt="image02" />
+							<span class="icon-eye"></span>
+						</div>
+						<div class="uc-final-content">
+							
+                            <img src="images/large/2.jpg" alt="image02-large" />
+							<span class="icon-cancel"></span>
+						</div>
+					</div><!-- / uc-container -->
+
+					<div class="uc-container">
+						<div class="uc-initial-content">
+							<img src="images/thumbs/3.jpg" alt="image03" />
+							<span class="icon-eye"></span>
+						</div>
+						<div class="uc-final-content">
+							
+                            <img src="images/large/3.jpg" alt="image03-large" />
+							<span class="icon-cancel"></span>
+						</div>
+					</div><!-- / uc-container -->
+					
+					
+					<div class="uc-container">
+						<div class="uc-initial-content">
+							<img src="images/thumbs/4.jpg" alt="image04" />
+							<span class="icon-eye"></span>
+						</div>
+						<div class="uc-final-content">
+							
+                            <img src="images/large/4.jpg" alt="image04-large" />
+							<span class="icon-cancel"></span>
+						</div>
+					</div><!-- / uc-container -->
+					
+					
+					
+					
+					
+					
+
+				</div><!-- / grid -->
+				
+				
+			</section>
+
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.pfold.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				// say we want to have only one item opened at one moment
+				var opened = false;
+
+				$( '#grid > div.uc-container' ).each( function( i ) {
+
+					var $item = $( this ), direction;
+
+					switch( i ) {
+						case 0 : direction = ['right','bottom']; break;
+						case 1 : direction = ['left','bottom']; break;
+						case 2 : direction = ['right','top']; break;
+						case 3 : direction = ['left','top']; break;
+					}
+					
+					var pfold = $item.pfold( {
+						folddirection : direction,
+						speed : 300,
+						onEndFolding : function() { opened = false; },
+					} );
+
+					$item.find( 'span.icon-eye' ).on( 'click', function() {
+
+						if( !opened ) {
+							opened = true;
+							pfold.unfold();
+						}
+
+
+					} ).end().find( 'span.icon-cancel' ).on( 'click', function() {
+
+						pfold.fold();
+
+					} );
+
+				} );
+				
+			});
+		</script>
+		
+		
+
+		
+		
+		 <div id="swatch" data-type="background" data-speed="10" class="pages">
+		
+		        
+<article>
+	
+	
+	
+	
+	<div id="header" data-type="background" data-speed="10" class=""> 
+		<div class="container1">
+		
+			<section class="main">
+			
+				<div id="sb-container" class="sb-container">
+				
+					<div>
+						<a target="_parent" href="../OpeningSequence/Home/home.html">
+							<span class="entypo-home" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>HOME</span></h4>
+					</div>
+					<div>
+						<a target="_parent" href="../register.html">						
+							<span class="entypo-user-add" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>REGISTER</span></h4>
+					</div>	
+					<div>
+						<a target="_parent" href="../aboutus.html">
+							<span class="entypo-users" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>ABOUT US</span></h4>
+					</div>	
+					<div>
+						<a target="_parent" href="../events.html">
+							<span class="entypo-mic" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>EVENTS</span></h4>
+					</div>	
+					<div>
+						<a target="_parent" href="../schedule.html">
+							<span class="entypo-calendar" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>SCHEDULE</span></h4>
+					</div>	
+					<div>
+						<a target="_parent" href="../sponsors.html">
+							<span class="entypo-megaphone" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>SPONSORS</span></h4>
+					</div>	
+					<div>
+						<a target="_parent" href="../Gallery/gallery.html">
+							<span class="entypo-camera" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>GALLERY</span></h4>											
+					</div>	
+					<div>
+						<a target="_parent" href="../developersreel.html">
+							<span class="entypo-tools" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h6><span>DEVELOPER'S REEL</span></h6>											
+					</div>	
+					<div>
+						<a target="_parent" href="../halloffame.html">
+							<span class="entypo-trophy" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>HALL OF FAME</span></h4>											
+					</div>	
+					<div>
+						<a target="_parent" href="../contactus.html">
+							<span class="entypo-vcard" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>CONTACT US</span></h4>											
+					</div>
+					<div>
+						<a target="_blank" href="../promo.html">
+							<span class="entypo-video" style="font-size: 45px; color:#000"></span> 
+						</a>
+						<h4><span>PROMO</span></h4>											
+					</div>
+					<div>
+
+						
+						<h5><span>ETAMAX</span></h5>											
+					</div>
+					
+					
+				</div><!-- sb-container -->
+				
+</section>
+			
+        </div>
+        
+    
+    </div>
+	
+
+			
+
+		<script type="text/javascript" src="swatch/galleryjs/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook( {
+					// number of degrees that is between each item
+					center : 0,
+					angleInc : 16,
+					neighbor : 15,
+					// if it should be closed by default
+					initclosed : true,
+					// index of the element that when clicked, triggers the open/close function
+					// by default there is no such element
+					closeIdx : 11
+				} );
+			
+			});
+		</script>
+		
+	</article>
+</div>     
+	
+		
+		
+		
+		
+		
+		
+		
+    </body>
+</html>
