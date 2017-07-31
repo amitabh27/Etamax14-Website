@@ -1,5 +1,5 @@
 # Etamax14-Website
-============================================================================================================================
+
 Website of inter-collegiate fest of F.C.R.I.T,Vashi
 
 The web application was a successful attempt to make the registration process, of our college festival ETAMAX, online.
