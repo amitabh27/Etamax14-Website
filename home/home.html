@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ETAMAX14</title>
+        <meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <link rel="stylesheet" type="text/css" href="homecss/demo.css" />
+        <link rel="stylesheet" type="text/css" href="homecss/style9.css" />
+		
+		<link rel="stylesheet" type="text/css" href="blurcss/demoblur.css" />
+        <link rel="stylesheet" type="text/css" href="blurcss/style3.css" /> 
+        <link rel="stylesheet" type="text/css" href="homecss/logo.css"/>
+        <link rel="stylesheet" type="text/css" href="homecss/text.css"/>
+		
+        <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Peralta' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="jquery.countdown.css">
+		<style type="text/css">
+			#defaultCountdown { width: 240px; height: 45px; }
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.countdown.js"></script>
+		
+		
+
+		
+		
+    </head>
+    <body>
+    <div id="logo">
+		<img src="logo.jpg">
+	</div>
+		<div class="container">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="content">
+                <ul class="ca-menu">
+                    <li>
+                        <a href="../register1.html">
+                           <!-- <span class="ca-icon">A</span> -->
+                            <div class="ca-content">
+                                <h2 class="ca-main">E</h2>
+                                <h2 class="ca-sub"><b>Register</b></h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../aboutus.html">
+                           <!-- <span class="ca-icon">I</span> -->
+                           <div class="ca-content">
+                                <h2 class="ca-main">T</h2>
+                                <h2 class="ca-sub"><b>About Us</b></h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../events1.html">
+                           <!-- <span class="ca-icon">C</span>-->
+                            <div class="ca-content">
+                                <h2 class="ca-main">A</h2>
+                                <h2 class="ca-sub"><b>Events</b></h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../schedule1.html">
+                           <!-- <span class="ca-icon">S</span> -->
+                           <div class="ca-content">
+                                <h2 class="ca-main">M</h2>
+                                <h2 class="ca-sub"><b>Schedule</b></h3>
+                            </div>
+                        </a>
+                    </li>
+					<li>
+                        <a href="../sponsors1.html">
+                          <!--  <span class="ca-icon">A</span>-->
+                          <div class="ca-content">
+                                <h2 class="ca-main">A</h2>
+                                <h2 class="ca-sub"><b>Sponsors</b></h3>
+                            </div>
+                        </a>
+                    </li>
+					<li>
+                        <a href="../contactus.html">
+                          <!--  <span class="ca-icon">A</span>-->
+                          <div class="ca-content">
+                                <h2 class="ca-main">X</h2>
+                                <h2 class="ca-sub" style="top:45px;"><b>Contact <br> Us</b></h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>      <!-- content -->
+            
+            <div class="hasCountdown">
+	            <span id="glowingLayout"> 
+	            		
+	    				<span class="image{d10}"></span> 
+	    				<span class="image{d1}"></span> 
+	    				<span class="imageDay"></span> 
+	    				<span class="imageSpace"></span> 
+	    				<span class="image{h10}"></span> 
+	    				<span class="image{h1}"></span> 
+	    				<span class="imageSep"></span> 
+	    				<span class="image{m10}"></span> 
+	    				<span class="image{m1}"></span> 
+	    				<span class="imageSep"></span> 
+	    				<span class="image{s10}"></span> 
+	    				<span class="image{s1}"></span> 
+	    		</span>
+	    			
+	    		<script type="text/javascript">
+		$(function () {
+
+			var etamax=new Date(Date.parse("Tue, 11 Feb 2014 00:00:00 GMT+0530"));
+			$('#glowingLayout').countdown({until: etamax, compact: true, 
+		    layout: '<span class="image{d10}"></span><span class="image{d1}"></span>' + 
+		        '<span class="imageSep"></span>' + 
+	   		    '<span class="image{h10}"></span><span class="image{h1}"></span>' + 
+	        	'<span class="imageSep"></span>' + 
+	        	'<span class="image{m10}"></span><span class="image{m1}"></span>' + 
+	        	'<span class="imageSep"></span>' + 
+	        	'<span class="image{s10}"></span><span class="image{s1}"></span>'});
+		});
+		</script>
+	    	</div>
+          </div>
+          
+      <div id="text">
+      	<span>DAYS</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      	<span>HOURS</span> &nbsp;&nbsp;
+      	<span>MINUTES</span> &nbsp;
+      	<span>SECONDS</span>
+      </div>
+          
+    </body>
+</html>
