@@ -1,0 +1,73 @@
+#header
+{
+	height:50px;
+	background:;
+
+	border:;
+	position:fixed;
+	top:0px;
+	width:100%;
+	z-index:9999;
+}
+#home 
+{ 
+	background: url(backgroundimages/3_gal.jpg) 50% 0 repeat fixed; min-height: 1000px; 
+	height: 180%; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 100%; 
+	position: relative;
+}
+                
+#home article 
+{ 
+	height: 100%; 
+	position: relative; 
+	text-align: center; 
+	top: 150px; 
+	width: 100%; 
+}
+                
+#about 
+{ 
+	/*background: url(rsz_dn.jpg) 50% 0 repeat fixed; min-height: 0%; */
+	height: 100%; 
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 100%; 
+	position: relative; 
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+		 
+#about article 
+{ 
+	height: 458px; 
+	position: relative; 
+	text-align: center; 
+	top: 150px; 
+	width: 100%; 
+}
+
+                
+#contact 
+{
+/*	background: url(galleryflipimg.jpg) 50% 0 repeat fixed; min-height: 0%;  */
+	height: 100%; 
+	margin: 0 auto; 
+
+	width: 100%; 
+	max-width: 100%; 
+	position: relative; 
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+                
+#contact article 
+{ 
+	height: 458px; 
+	position: absolute; 
+	text-align: center; 
+	top: 150px; 
+	width: 100%; 
+}
